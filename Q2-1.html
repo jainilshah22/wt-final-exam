@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 2-1</title>
+        <style>
+            div{
+                padding: 10px;
+                margin: 1.5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#">
+            <div>
+                <label for="name">Enter Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="name">Email Id::</label>
+                <input type="email" required>
+            </div>
+            <div>
+                <label for="name">Password:</label>
+                <input type="password" id="pass" required>
+            </div>
+            <div>
+                <label for="number">Mobile Number:</label>
+                <input type="text" id="number" required>
+            </div>
+            <div>
+                <label for="name">Enter Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div>
+                <label for="name">Last Name:</label>
+                <input type="text" id="lname" required>
+            </div>
+            <div>
+                <label for="addr">Address:</label><br>
+                <textarea name="" id="address" col="30" row="40" required></textarea>
+            </div>
+            <div>
+                <input type="submit" name="" value="Submit">
+            </div>
+            <div>
+                <input onclick="check()" type="submit" value="submit">
+            </div>
+        </form>
+        <script>
+            function check() {
+                var no=document.getElementById('number').value;
+                var pass=document.getElementById('pass').value;
+                if(pass.length<6){
+                    alert ("Password cannot be less than 6");
+                }
+                else if(number.length>10){
+                    alert ("Mobile Number cannot be more then 10");
+                }
+            }
+        </script>
+    </body>
+</html>
